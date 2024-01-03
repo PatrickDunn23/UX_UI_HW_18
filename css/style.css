@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inline-block {
+    display:flex;
+    padding: 10px; 
+}
+body{
+    margin: 0;
+}
+
+header{
+width: 100%;
+
+flex-shrink: 0;
+background: rgba(241, 240, 242, 0.60);
+backdrop-filter: blur(10px);
+position: fixed;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center; 
+}
+
+.Nav{
+    width: 70%;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    width: 50%;
+    margin-left: auto;
+    color: black;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: capitalize; 
+}
+
+.NavBut{
+height: 30px;
+}
+.NavBut:hover{
+    text-shadow:  0px 0px 7px #EF9A63; 
+}
+
+.button{
+    color: black;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    word-wrap: break-word;
+    width: 150px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+footer{
+    background-image: url(../images/homepagerfooterimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.footerlogo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2%;
+}
+
+.footername{
+    display: flex;
+    vertical-align: top;
+    padding: 2%;
+    justify-content: space-between; 
+    color: #000;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+}
+
+ul li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.heroimg{
+    background-image: url(../images/homepagehero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h1{
+    display: flex;
+    padding-top: 100px;
+    padding-right: 27px;
+    align-items: center;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Lato;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    text-transform: capitalize;
+}
+
+h2{
+    display: flex;
+    width: 800px;
+    
+    padding: 0px 16px 13px 0px;
+    align-items: center;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Lato;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    text-transform: capitalize;
+}
+
+h4{
+    color: #000;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-transform: capitalize;
+    width: 300px;
+}
+
+
+.skills{
+    display: flex;
+    width: 121px;
+    height: 18px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.casestudy{
+    width: cover;
+    display: grid;
+    grid-template-columns: 30% 70% ;
+    padding: 2%;
+}
+
+.caseimage{
+   width: 100%;
+   height: auto;
+}
+
+.hrcase{
+    background-color: black;
+    height: 2px;
+    width: 100%;
+   transform: translateY(10px);
+}
+.hrfooter{
+    background-color: black;
+    height: 2px;
+    width: 96%;
+   transform: translateY(-60px);
+}
