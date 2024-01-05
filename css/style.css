@@ -14,8 +14,7 @@ body{
 
 header{
 width: 100%;
-
-flex-shrink: 0;
+z-index: 1000;
 background: rgba(241, 240, 242, 0.60);
 backdrop-filter: blur(10px);
 position: fixed;
@@ -33,11 +32,10 @@ position: fixed;
     justify-content: flex-end;
     align-items: center;
     gap: 50px;
-    width: 50%;
     margin-left: auto;
     color: black;
     font-family: Lato;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -69,8 +67,10 @@ footer{
     background-image: url(../images/homepagerfooterimage.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    padding: 2%;
 }
+
+
 
 .footerlogo{
     display: flex;
@@ -175,13 +175,59 @@ h4{
 
 .hrcase{
     background-color: black;
-    height: 2px;
+    height: 3px;
     width: 100%;
    transform: translateY(10px);
 }
 .hrfooter{
     background-color: black;
-    height: 2px;
+    height: 3px;
     width: 96%;
    transform: translateY(-60px);
 }
+
+.headerPadding{
+    height: 400px;
+    padding-top: 100px;
+    
+}
+.hrabout{
+    background-color: black;
+    height: 3px;
+    width: 100%;
+}
+.flexContainer{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+
+}
+.metext{
+    color: #000;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-transform: capitalize;
+    width: 300px;
+}
+
+#row {
+    background-color: #FFF7DE;
+    
+  }
+
+  .flex_item {
+    padding:10px;
+    margin: 10px;
+    background-color: orange;
+    color: white;
+  }
+  .profilePic{
+    width: 60%;
+  }
+  .footerBackround{
+
+  }
