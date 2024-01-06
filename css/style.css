@@ -3,16 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+  /* Header Section................. */
 
 .inline-block {
     display:flex;
-    padding: 10px; 
+    align-items: center;
 }
 body{
     margin: 0;
+    padding: 0;
 }
 
 header{
+    display: flex;
+    top: 0;
+    height: 120px !important;
 width: 100%;
 z-index: 1000;
 background: rgba(241, 240, 242, 0.60);
@@ -23,16 +28,20 @@ position: fixed;
 
 .logo{
     display: flex;
-    align-items: center; 
+    align-items: center;
+  
+    
+    margin-left: 60px;
+    background-color: red;
 }
 
 .Nav{
-    width: 70%;
-    display: inline-flex;
+ 
+    display: flex;
     justify-content: flex-end;
-    align-items: center;
+    
     gap: 50px;
-    margin-left: auto;
+    
     color: black;
     font-family: Lato;
     font-size: 20px;
@@ -41,6 +50,10 @@ position: fixed;
     line-height: normal;
     letter-spacing: 1.2px;
     text-transform: capitalize; 
+    background-color: red;
+    
+    margin-right: 0;
+    flex-grow: 1;
 }
 
 .NavBut{
@@ -51,6 +64,7 @@ height: 30px;
 }
 
 .button{
+    margin-top: 30px;
     color: black;
     font-size: 16px;
     font-family:Arial, Helvetica, sans-serif;
@@ -63,41 +77,7 @@ height: 30px;
     flex-shrink: 0;
 }
 
-footer{
-    background-image: url(../images/homepagerfooterimage.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 2%;
-}
 
-
-
-.footerlogo{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 2%;
-}
-
-.footername{
-    display: flex;
-    vertical-align: top;
-    padding: 2%;
-    justify-content: space-between; 
-    color: #000;
-    font-family: Lato;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    letter-spacing: 1.2px;
-    text-transform: capitalize;
-}
-
-ul li {
-    display: inline-block;
-    vertical-align: top;
-}
 
 .heroimg{
     background-image: url(../images/homepagehero.jpg);
@@ -170,7 +150,7 @@ h4{
 
 .caseimage{
    width: 100%;
-   height: auto;
+   
 }
 
 .hrcase{
@@ -179,17 +159,19 @@ h4{
     width: 100%;
    transform: translateY(10px);
 }
-.hrfooter{
-    background-color: black;
-    height: 3px;
-    width: 96%;
-   transform: translateY(-60px);
-}
+
 
 .headerPadding{
-    height: 400px;
-    padding-top: 100px;
-    
+    margin-top: 200px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 100px;
+}
+
+.backgroundPadding{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 100px;
 }
 .hrabout{
     background-color: black;
@@ -197,37 +179,127 @@ h4{
     width: 100%;
 }
 .flexContainer{
-    display: flex;
-    margin: 10px;
-    padding: 10px;
-
+    display: flex; 
+    justify-content: space-between;
+    
+}
+.hrResume{
+    background-color: black;
+    height: 3px;
+    width: 665%;
 }
 .metext{
-    color: #000;
+    color: black;
     font-family: Lato;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 1.6px;
-    text-transform: capitalize;
-    width: 300px;
+    
+    width: 30%;
+    
 }
 
-#row {
-    background-color: #FFF7DE;
-    
-  }
 
   .flex_item {
-    padding:10px;
-    margin: 10px;
-    background-color: orange;
-    color: white;
+    margin-top: 30px;
+    
+    
   }
   .profilePic{
-    width: 60%;
-  }
-  .footerBackround{
+    max-width: 60%;
+    height: auto;
+    align-items: flex-end;
 
   }
+  
+  .container{
+    position: relative;
+  }
+  .backgroundText{
+    color: #000;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    margin-top: 30px;
+  }
+
+  /* Footer Section................. */
+ .name{
+    margin-top: 50px;
+    
+    
+ }
+ .footerContact{
+    margin-top: 50px;
+    padding-left: 50px;
+
+ }
+
+ .hrfooter{
+    background-color: black;
+    height: 3px;
+    width: 94.5%;
+    position: absolute;
+    bottom: 0;
+    padding-right: 60px;
+    
+   transform: translateY(-220px);
+}
+
+.footer {
+    position: relative;
+    min-height: 300px;
+    z-index: 1;
+    
+}
+footer {
+    min-height: 300px; 
+    
+}
+.footerBackground {
+
+    background-image: url(../images/homepagerfooterimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px; 
+
+    position: relative;
+    z-index: 1;
+    
+ 
+}
+
+.footerlogo{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 60px;
+    margin-top: 50px;
+    
+}
+
+.footername{
+    display: flex;
+    vertical-align: top;
+    
+    justify-content: space-between; 
+    color: #000;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+ul li {
+    display: inline-block;
+    vertical-align: top;
+}
