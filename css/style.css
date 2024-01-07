@@ -5,68 +5,60 @@
 }
   /* Header Section................. */
 
-.inline-block {
-    margin-left: 60px;
-    margin-right: 60px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: aqua;
-}
-
-.logo{
+  header{
     display: flex;
-    background-color: red;
-}
+    top: 0;
+    height: 120px !important;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(241, 240, 242, 0.60);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    }
 
-.Nav{    
+  .headerContents{
     display: flex;
-    
-    color: black;
+    vertical-align: top;  
+    justify-content: space-between; 
+    color: #000;
     font-family: Lato;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
     letter-spacing: 1.2px;
-    text-transform: capitalize; 
-    
-    background-color: coral;
+    text-transform: capitalize;
+    margin-left: 60px;
+    margin-right: 60px;
+    height:120px;
+    align-items: center;
 }
-.NavBut{
 
-    padding-left: 30px;
-    display: flex;
-    align-items: flex-end;
-    }
+.headerSpacing{
+    align-items: center;
+}
+
+.head{
+    width: 100%;
+}
+
+.navoptions{
+    padding-left: 50px;
+  
+}
+
+.navoptions:hover{
+    text-shadow:  0px 0px 7px #EF9A63; 
+}
+
+  /* Body Section................. */
+
 body{
     margin: 0;
     padding: 0;
 }
 
-header{
-    display: flex;
-    top: 0;
-    height: 120px !important;
-width: 100%;
-z-index: 1000;
-background: rgba(241, 240, 242, 0.60);
-backdrop-filter: blur(10px);
-position: fixed;
-
-}
-
-
-
-
-
-
-.NavBut:hover{
-    text-shadow:  0px 0px 7px #EF9A63; 
-}
-
 .button{
-    margin-top: 30px;
     color: black;
     font-size: 16px;
     font-family:Arial, Helvetica, sans-serif;
@@ -78,19 +70,20 @@ position: fixed;
     height: 50px;
     flex-shrink: 0;
 }
-
-
-
+/* Homepage ................. */
 .heroimg{
     background-image: url(../images/homepagehero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    margin-bottom: 50px;
+   
 }
 
 h1{
     display: flex;
-    padding-top: 100px;
+    padding-top: 150px;
+    margin-left: 60px;
     padding-right: 27px;
     align-items: center;
     flex-shrink: 0;
@@ -107,7 +100,7 @@ h1{
 h2{
     display: flex;
     width: 800px;
-    
+    margin-left: 60px;
     padding: 0px 16px 13px 0px;
     align-items: center;
     flex-shrink: 0;
@@ -121,50 +114,8 @@ h2{
     text-transform: capitalize;
 }
 
-h4{
-    color: #000;
-    font-family: Lato;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 1.6px;
-    text-transform: capitalize;
-    width: 300px;
-}
-
-
-.skills{
-    display: flex;
-    width: 121px;
-    height: 18px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.casestudy{
-    width: cover;
-    display: grid;
-    grid-template-columns: 30% 70% ;
-    padding: 2%;
-}
-
-.caseimage{
-   width: 100%;
-   
-}
-
-.hrcase{
-    background-color: black;
-    height: 3px;
-    width: 100%;
-   transform: translateY(10px);
-}
-
-
 .headerPadding{
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 60px;
     margin-right: 60px;
     margin-bottom: 100px;
@@ -175,6 +126,8 @@ h4{
     margin-right: 60px;
     margin-bottom: 100px;
 }
+
+/* About Page................. */
 .hrabout{
     background-color: black;
     height: 3px;
@@ -183,7 +136,6 @@ h4{
 .flexContainer{
     display: flex; 
     justify-content: space-between;
-    
 }
 
 .metext{
@@ -194,27 +146,22 @@ h4{
     font-weight: 500;
     line-height: normal;
     letter-spacing: 1.6px;
-    
     width: 30%;
-    
 }
-
 
   .flex_item {
     margin-top: 30px;
-    
-    
   }
   .profilePic{
     max-width: 60%;
     height: auto;
     align-items: flex-end;
-
   }
   
   .container{
     position: relative;
   }
+
   .backgroundText{
     color: #000;
     font-family: Lato;
@@ -227,13 +174,73 @@ h4{
   }
 
   .resumeSpacing{
-    
     margin-left: 60px;
     margin-right: 60px;
     width: calc(100% - 120px);
     height: 200px;
+}
+
+/* Work Page................. */
+
+.caseIntro{
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.hrcase{
+    background-color: black;
+    height: 3px;
+    width: calc(100% - 120px);
+    position: absolute;
+    margin-left: 60px;
+}
+
+.WorkGrid{
+    width: cover;
+    display: grid;
+    grid-template-columns: 30% 70% ;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-top: 50px;
+    margin-bottom: 50px;
     
 }
+.gridRows{
+    display: grid;
+    grid-template-rows:  minmax(auto, 200px) auto 80px;
+   
+}
+
+.caseimage{
+   width: 100%;
+   padding-left: 50px;
+}
+
+.skills{
+  padding-top: 10px;
+
+}
+
+h4{
+    color: #000;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-transform: capitalize;
+    padding-right: 50px;
+}
+
+.caseButton{
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+
 
   /* Footer Section................. */
  .name{
@@ -244,8 +251,6 @@ h4{
  .footerContact{
     margin-top: 50px;
     padding-left: 50px;
-    background-color: coral;
-
  }
 
  .hrfooter{
@@ -269,6 +274,18 @@ footer {
 }
 .footerBackground {
 
+    background-image: url(../images/Mask\ group.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px; 
+
+    position: relative;
+    z-index: 1;
+
+}
+
+.homefooterBackground {
+
     background-image: url(../images/homepagerfooterimage.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -276,10 +293,8 @@ footer {
 
     position: relative;
     z-index: 1;
-    
- 
-}
 
+}
 .footerlogo{
     display: flex;
     justify-content: flex-start;
@@ -302,7 +317,6 @@ footer {
     text-transform: capitalize;
     margin-left: 60px;
     margin-right: 60px;
-    background-color: aqua;
 }
 
 ul li {
@@ -310,3 +324,10 @@ ul li {
     vertical-align: top;
 }
 
+/* New header Section................. */
+.casestudy{
+    width: cover;
+    display: grid;
+    grid-template-columns: 30% 70% ;
+    padding: 2%;
+}
