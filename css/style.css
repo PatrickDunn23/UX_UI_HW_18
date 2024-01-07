@@ -6,9 +6,39 @@
   /* Header Section................. */
 
 .inline-block {
+    margin-left: 60px;
+    margin-right: 60px;
     display:flex;
     align-items: center;
+    justify-content: center;
+    background-color: aqua;
 }
+
+.logo{
+    display: flex;
+    background-color: red;
+}
+
+.Nav{    
+    display: flex;
+    
+    color: black;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: capitalize; 
+    
+    background-color: coral;
+}
+.NavBut{
+
+    padding-left: 30px;
+    display: flex;
+    align-items: flex-end;
+    }
 body{
     margin: 0;
     padding: 0;
@@ -26,39 +56,11 @@ position: fixed;
 
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-  
-    
-    margin-left: 60px;
-    background-color: red;
-}
 
-.Nav{
- 
-    display: flex;
-    justify-content: flex-end;
-    
-    gap: 50px;
-    
-    color: black;
-    font-family: Lato;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    letter-spacing: 1.2px;
-    text-transform: capitalize; 
-    background-color: red;
-    
-    margin-right: 0;
-    flex-grow: 1;
-}
 
-.NavBut{
-height: 30px;
-}
+
+
+
 .NavBut:hover{
     text-shadow:  0px 0px 7px #EF9A63; 
 }
@@ -183,11 +185,7 @@ h4{
     justify-content: space-between;
     
 }
-.hrResume{
-    background-color: black;
-    height: 3px;
-    width: 665%;
-}
+
 .metext{
     color: black;
     font-family: Lato;
@@ -228,6 +226,15 @@ h4{
     margin-top: 30px;
   }
 
+  .resumeSpacing{
+    
+    margin-left: 60px;
+    margin-right: 60px;
+    width: calc(100% - 120px);
+    height: 200px;
+    
+}
+
   /* Footer Section................. */
  .name{
     margin-top: 50px;
@@ -237,17 +244,16 @@ h4{
  .footerContact{
     margin-top: 50px;
     padding-left: 50px;
+    background-color: coral;
 
  }
 
  .hrfooter{
     background-color: black;
     height: 3px;
-    width: 94.5%;
+    width: calc(100% - 120px);
     position: absolute;
     bottom: 0;
-    padding-right: 60px;
-    
    transform: translateY(-220px);
 }
 
@@ -284,8 +290,7 @@ footer {
 
 .footername{
     display: flex;
-    vertical-align: top;
-    
+    vertical-align: top;  
     justify-content: space-between; 
     color: #000;
     font-family: Lato;
@@ -297,9 +302,11 @@ footer {
     text-transform: capitalize;
     margin-left: 60px;
     margin-right: 60px;
+    background-color: aqua;
 }
 
 ul li {
     display: inline-block;
     vertical-align: top;
 }
+
