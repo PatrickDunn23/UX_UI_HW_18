@@ -34,6 +34,14 @@
     align-items: center;
 }
 
+a{
+    
+        
+       text-decoration: none;
+       color: black;
+        
+}
+
 .headerSpacing{
     align-items: center;
 }
@@ -132,10 +140,12 @@ h2{
     background-color: black;
     height: 3px;
     width: 100%;
+    
 }
 .flexContainer{
     display: flex; 
     justify-content: space-between;
+    background-color: #EF9A63;
 }
 
 .metext{
@@ -300,7 +310,7 @@ footer {
     justify-content: flex-start;
     margin-left: 60px;
     margin-top: 50px;
-    
+    width: auto;
 }
 
 .footername{
@@ -324,10 +334,28 @@ ul li {
     vertical-align: top;
 }
 
+.spinMe {
+    animation: spin 2s infinite;
+    animation-timing-function: linear;
+
+  }
+
+@keyframes spin {
+    from {transform: rotate(180deg);
+  
+    }
+    to {transform: rotate(-180deg);
+  
+    }}
+
+    
 /* New header Section................. */
 .casestudy{
     width: cover;
     display: grid;
     grid-template-columns: 30% 70% ;
     padding: 2%;
+}
+@media screen {max-width: 600;
+    
 }
