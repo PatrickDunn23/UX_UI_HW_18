@@ -33,10 +33,7 @@
     height:120px;
     align-items: center;
 }
-
 a{
-    
-        
        text-decoration: none;
        color: black;
         
@@ -44,6 +41,10 @@ a{
 
 .headerSpacing{
     align-items: center;
+}
+.headerSpacing :hover{
+    animation: spin 0.5s infinite;
+    animation-timing-function: linear;
 }
 
 .head{
@@ -125,11 +126,12 @@ h2{
  
 }
 .hometext{
-    width: 700px;
+    max-width: 800px;
     margin-left: 60px;
     transform: translateY(-370px);
     align-items: center;
     flex-shrink: 0;
+    margin-right: 60px;
 }
 
 .headerPadding{
@@ -153,13 +155,12 @@ h2{
 .hrabout{
     background-color: black;
     height: 3px;
-    width: 100%;
-    
+    width: 100%; 
 }
+
 .flexContainer{
     display: flex; 
     justify-content: space-between;
-    background-color: #EF9A63;
 }
 
 .metext{
@@ -178,6 +179,7 @@ h2{
   }
   .profilePic{
     max-width: 60%;
+    max-height: 60%;
     height: auto;
     align-items: flex-end;
   }
@@ -205,7 +207,12 @@ h2{
 }
 
 /* Work Page................. */
-
+.casestudy{
+    width: cover;
+    display: grid;
+    grid-template-columns: 30% 70% ;
+    padding: 2%;
+}
 .caseIntro{
     display: flex; 
     justify-content: space-between;
@@ -227,13 +234,12 @@ h2{
     margin-left: 60px;
     margin-right: 60px;
     padding-top: 50px;
-    margin-bottom: 50px;
-    
+    margin-bottom: 50px;  
 }
+
 .gridRows{
     display: grid;
     grid-template-rows:  minmax(auto, 200px) auto 80px;
-   
 }
 
 .caseimage{
@@ -259,7 +265,6 @@ h4{
 }
 
 .caseButton{
-  
     display: flex;
     justify-content: flex-start;
     align-items: end;
@@ -324,7 +329,7 @@ footer {
     justify-content: flex-start;
     margin-left: 60px;
     margin-top: 50px;
-    width: auto;
+    width: 80px;
 }
 
 .footername{
@@ -338,7 +343,6 @@ footer {
     font-weight: 800;
     line-height: normal;
     letter-spacing: 1.2px;
-    text-transform: capitalize;
     margin-left: 60px;
     margin-right: 60px;
 }
@@ -353,7 +357,10 @@ ul li {
     animation-timing-function: linear;
 
   }
+/* Contact Section................. */
 
+
+  /* Animations and media................. */
 @keyframes spin {
     from {transform: rotate(180deg);
   
@@ -362,11 +369,47 @@ ul li {
   
     }}
 
-    
-/* New header Section................. */
-.casestudy{
-    width: cover;
-    display: grid;
-    grid-template-columns: 30% 70% ;
-    padding: 2%;
+ @media screen and (max-width:600px) {
+    /* Flex changes................. */   
+    .flexContainer{
+            display: flex;
+            flex-direction: column;
+        }
+        .metext{
+            color: black;
+            font-family: Lato;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 1.6px;
+            width: 100%;
+        }
+        
+          .profilePic{
+            max-width: 100%;
+            height: auto;
+            align-items: flex-end;
+          }
+   
+    /* Grid changes................. */
+    .WorkGrid{
+        width: cover;
+        display: grid;
+        grid-template-rows: 100% 100% 100% cover ;
+        grid-template-columns: 1fr;
+        margin-left: 60px;
+        margin-right: 60px;
+        padding-top: 50px;
+        margin-bottom: 50px;  
+    }
+    .caseimage{
+        width: 100%;
+        padding-top: 30px;
+        padding-left: 0px;
+     }
+}
+
+.active{
+    color: #EF9A63;
 }
